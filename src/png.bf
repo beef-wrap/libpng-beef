@@ -877,7 +877,7 @@ public static class libpng
 	*/
 
 	/* Returns the version number of the library */
-	[CLink] public static extern png_uint_32 png_access_version_number(void);
+	[CLink] public static extern png_uint_32 png_access_version_number();
 
 	/* Tell lib we have already handled the first <num_bytes> magic bytes.
 	* Handling more than 8 bytes from the beginning of the file is an error.

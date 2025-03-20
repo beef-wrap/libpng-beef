@@ -456,10 +456,10 @@ extension libpng
 	// * The checks below use constants from limits.h, as defined by the ISOC90
 	// * standard.
 	// */
-	typealias png_byte = c_uint;
+	public typealias png_byte = c_uint;
 
 	// #if INT_MIN == -32768 && INT_MAX == 32767
-	typealias png_int_16 = c_short;
+	public typealias png_int_16 = c_short;
 	// #elif SHRT_MIN == -32768 && SHRT_MAX == 32767
 	// typedef short png_int_16;
 	// #else
@@ -469,13 +469,13 @@ extension libpng
 	// #if UINT_MAX == 65535
 	// typedef unsigned int png_uint_16;
 	// #elif USHRT_MAX == 65535
-	typealias png_uint_16 = c_ushort;
+	public typealias png_uint_16 = c_ushort;
 	// #else
 	// #  error "libpng requires an unsigned 16-bit type"
 	// #endif
 
 	// #if INT_MIN < -2147483646 && INT_MAX > 2147483646
-	typealias png_int_32 = c_int;
+	public typealias png_int_32 = c_int;
 	// #elif LONG_MIN < -2147483646 && LONG_MAX > 2147483646
 	// typedef long int png_int_32;
 	// #else
@@ -485,7 +485,7 @@ extension libpng
 	// #if UINT_MAX > 4294967294U
 	// typedef unsigned int png_uint_32;
 	// #elif ULONG_MAX > 4294967294U
-	typealias png_uint_32 = c_ulong;
+	public typealias png_uint_32 = c_ulong;
 	// #else
 	// #  error "libpng requires an unsigned 32-bit (or more) type"
 	// #endif

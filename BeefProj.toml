@@ -6,5 +6,9 @@ DefaultNamespace = "libpng"
 
 [Configs.Debug.Win64]
 CLibType = "DynamicDebug"
-LibPaths = ["$(ProjectDir)\\libs\\libpng.lib", "$(ProjectDir)\\libs\\zlib.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\debug\\libpng16_staticd.lib", "$(ProjectDir)\\libs\\debug\\zlib.lib"]
+PreprocessorMacros = ["DEBUG", "PNG_STDIO_SUPPORTED", "PNG_INFO_IMAGE_SUPPORTED", "PNG_SEQUENTIAL_READ_SUPPORTED", "PNG_WRITE_SUPPORTED", "PNG_EASY_ACCESS_SUPPORTED"]
+
+[Configs.Release.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\release\\libpng16_static.lib", "$(ProjectDir)\\libs\\release\\zlib.lib"]
 PreprocessorMacros = ["DEBUG", "PNG_STDIO_SUPPORTED", "PNG_INFO_IMAGE_SUPPORTED", "PNG_SEQUENTIAL_READ_SUPPORTED", "PNG_WRITE_SUPPORTED", "PNG_EASY_ACCESS_SUPPORTED"]

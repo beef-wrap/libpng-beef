@@ -443,7 +443,7 @@ public static class libpng
 		png_byte red;
 		png_byte green;
 		png_byte blue;
-	};
+	}
 
 	typealias png_colorp = png_color*;
 	typealias png_colorpp = png_color**;
@@ -456,7 +456,7 @@ public static class libpng
 		png_uint_16 green;
 		png_uint_16 blue;
 		png_uint_16 gray; /* for use in grayscale files */
-	};
+	}
 
 	typealias png_color_16p = png_color_16*;
 	typealias png_color_16pp = png_color_16**;
@@ -469,7 +469,7 @@ public static class libpng
 		png_byte blue;
 		png_byte gray; /* for use in grayscale files */
 		png_byte alpha; /* for alpha channel files */
-	};
+	}
 
 	typealias png_color_8p = png_color_8*;
 	typealias png_color_8pp = png_color_8**;
@@ -486,7 +486,7 @@ public static class libpng
 		png_uint_16 blue;
 		png_uint_16 alpha;
 		png_uint_16 frequency;
-	};
+	}
 
 	typealias png_sPLT_entryp = png_sPLT_entry*;
 	typealias png_sPLT_entrypp = png_sPLT_entry**;
@@ -503,7 +503,7 @@ public static class libpng
 		png_byte depth; /* depth of palette samples */
 		png_sPLT_entryp entries; /* palette entries */
 		png_int_32 nentries; /* number of palette entries */
-	};
+	}
 
 	typealias png_sPLT_tp = png_sPLT_t*;
 	typealias png_sPLT_tpp = png_sPLT_t**;
@@ -574,7 +574,7 @@ public static class libpng
 		png_byte hour; /* hour of day, 0 - 23 */
 		png_byte minute; /* minute of hour, 0 - 59 */
 		png_byte second; /* second of minute, 0 - 60 (for leap seconds) */
-	};
+	}
 
 	typealias png_timep = png_time*;
 	typealias png_timepp = png_time**;
@@ -743,7 +743,7 @@ public static class libpng
 		png_byte bit_depth; /* bit depth of row */
 		png_byte channels; /* number of channels (1, 2, 3, or 4) */
 		png_byte pixel_depth; /* bits per pixel (depth * channels) */
-	};
+	}
 
 	typealias png_row_infop = png_row_info*;
 	typealias png_row_infopp = png_row_info**;
@@ -2437,7 +2437,7 @@ public static class libpng
 
 	const int PNG_IMAGE_VERSION = 1;
 
-	public struct png_control { };
+	public struct png_control { }
 
 	typealias png_controlp = png_control*;
 
@@ -2479,7 +2479,7 @@ public static class libpng
 		png_uint_32  warning_or_error;
 
 		char[64]         message;
-	};
+	}
 
 	typealias png_imagep = png_image*;
 
